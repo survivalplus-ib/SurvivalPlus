@@ -1,0 +1,4 @@
+name: SurvivalPlus
+version: '1.0'
+main: me.cirosanchez.survivalplus.SurvivalPlus
+api-version: '1.21'

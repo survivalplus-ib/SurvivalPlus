@@ -1,0 +1,56 @@
+# All this document is developed in MiniMessage format.
+# PlaceholderAPI compatible
+
+
+# Represents the amount of ticks the plugin will wait until updating the scoreboard.
+title-refresh-rate: 10
+
+# The title for the scoreboard.
+# It's a list of strings, each string is a line.
+# Each line will be in the scoreboard for the time of the refresh rate
+title:
+  - "<rainbow><b>SurvivalPlus</b><rainbow>"
+  - "<white><b>SurvivalPlus</b></white>"
+  - "<yellow><b>SurvivalPlus</b></white>"
+
+# The lines inside the scoreboard.
+# It's a list of objects that have two atributes
+# lines: A list of strings, same concept as title
+# reload: Boolean true/false, will mean if the line must be updated or constant
+# time: Integer, represents the amount of time in ticks the plugin will take to update if reload is true
+lines:
+  1:
+    lines:
+      - "<blue><b>Player: {name}</blue></b>"
+    reload: false
+    time: 1
+  2:
+    lines:
+      - ""
+    reload: false
+    time: 1
+  3:
+    lines:
+      - "<blue><b>Kills: {kills}</blue></b>"
+    reload: true
+    time: 100
+  4:
+    lines:
+      - ""
+    reload: false
+    time: 1
+  5:
+    lines:
+      - "<blue><b>Deaths: {deaths}</blue></b>"
+    reload: true
+    time: 100
+  6:
+    lines:
+      - ""
+    reload: false
+    time: 1
+  7:
+    lines:
+      - "<blue><b>Playtime: {playtime}</blue></b>"
+    reload: true
+    time: 20
