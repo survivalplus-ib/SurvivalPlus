@@ -1,0 +1,106 @@
+# All this document is developed in MiniMessage format.
+# PlaceholderAPI compatible
+
+
+# Represents the amount of ticks the plugin will wait until updating the scoreboard.
+title-refresh-rate: 10
+
+# The title for the scoreboard.
+# It's a list of strings, each string is a line.
+# Each line will be in the scoreboard for the time of the refresh rate
+title:
+  - "<rainbow><b>SurvivalPlus</b><rainbow>"
+  - "<white><b>SurvivalPlus</b></white>"
+  - "<white><b>SurvivalPlus</b></white>"
+
+# The lines inside the scoreboard.
+# It's a list of objects that have two atributes
+# lines: A list of strings, same concept as title
+# reload: Boolean true/false, will mean if the line must be updated or constant
+# time: Integer, represents the amount of time in ticks the plugin will take to update if reload is true
+lines:
+  1:
+    lines:
+      - "<blue><b>Player: {name}</blue></b>"
+    reload: false
+    time: 1
+  2:
+    lines:
+      - ""
+    reload: false
+    time: 1
+  3:
+    lines:
+      - "<blue><b>Kills: {kills}</blue></b>"
+    reload: true
+    time: 100
+  4:
+    lines:
+      - ""
+    reload: false
+    time: 1
+  5:
+    lines:
+      - "<blue><b>Deaths: {deaths}</blue></b>"
+    reload: true
+    time: 100
+  6:
+    lines:
+      - ""
+    reload: false
+    time: 1
+  7:
+    lines:
+      - "<blue><b>Playtime: {playtime}</blue></b>"
+    reload: true
+    time: 20
+
+
+# Any of this messages will be chosen randomly and sent to all the players online when a player joins
+# Placeholders: {player}, {kills}, {deaths}, {playtime}
+welcome-messages:
+  - "<gray>[<green>+</green>]</gray> <gray><green>{player}</green> has jumped into the server!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray>Get ready, <green>{player}</green> has arrived to shake things up!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray>Brace yourselves, <green>{player}</green> has joined the adventure!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray>Look who just walked in! Welcome, <green>{player}</green>!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray><green>{player}</green> has entered the realm of legends!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray><green>{player}</green> has stormed into the server!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray>The one and only <green>{player}</green> is here. Let the games begin!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray>A wild <green>{player}</green> appeared! Beware!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray>Guess who’s back? It’s <green>{player}</green>!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray>The hero <green>{player}</green> has graced us with their presence!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray><green>{player}</green> is here, making everything a bit more epic!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray>Ready or not, here comes <green>{player}</green>!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray><green>{player}</green> has joined the party!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray>Shiny and new, <green>{player}</green> just stepped in!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray><green>{player}</green> arrived! Let the quests begin!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray>Hold your breath, <green>{player}</green> has just entered the arena!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray><green>{player}</green> has landed! Prepare for an epic journey!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray>Sound the trumpets! <green>{player}</green> has joined the fray!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray><green>{player}</green> is here! Time to make history!</gray>"
+  - "<gray>[<green>+</green>]</gray> <gray>Look sharp! <green>{player}</green> has joined the ranks!</gray>"
+
+# Any of this messages will be chosen randomly and sent to all the players online when a player quits
+# Placeholders: {player}, {kills}, {deaths}, {playtime}
+goodbye-messages:
+  - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> has left the server. We'll miss you!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray>Farewell, <red>{player}</red>! Until we meet again!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> has logged off. Safe travels!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray>Goodbye, <red>{player}</red>! Hope to see you soon!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> has vanished into the unknown!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> has left the battlefield. The quest will wait!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> waved goodbye! Take care, friend!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> is off to new adventures. Farewell!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> just exited. The world feels emptier now!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray>The legendary <red>{player}</red> has departed. Until next time!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> has left us for now. Rest well, warrior!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray>See you soon, <red>{player}</red>! May fortune favor you!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> has logged off. The server bids you farewell!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray>Shining bright, <red>{player}</red> has logged off. Farewell!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray>Our journey pauses here, <red>{player}</red>. Until next time!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray>The winds carry <red>{player}</red> away. Safe travels!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray>Goodbye, <red>{player}</red>! Your legend lives on!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> has exited. The adventure will be here when you return!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray>Farewell, <red>{player}</red>! The world awaits your return!</gray>"
+  - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> has logged off. A brave soul gone for now!</gray>"
+
