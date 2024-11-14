@@ -5,6 +5,7 @@ import me.cirosanchez.clib.logger
 import me.cirosanchez.survivalplus.configuration.ConfigurationProvider
 import me.cirosanchez.survivalplus.listener.PlayerListener
 import me.cirosanchez.survivalplus.util.registerListener
+import net.kyori.adventure.text.minimessage.MiniMessage
 import org.bukkit.plugin.java.JavaPlugin
 
 class SurvivalPlus : JavaPlugin() {
@@ -33,5 +34,6 @@ class SurvivalPlus : JavaPlugin() {
     companion object {
         lateinit var instance: SurvivalPlus
         fun get() = instance
+        fun mm() = MiniMessage.miniMessage()
     }
 }

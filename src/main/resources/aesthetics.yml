@@ -104,3 +104,4 @@ goodbye-messages:
   - "<gray>[<red>-</red>]</gray> <gray>Farewell, <red>{player}</red>! The world awaits your return!</gray>"
   - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> has logged off. A brave soul gone for now!</gray>"
 
+
