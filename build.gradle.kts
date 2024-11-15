@@ -16,6 +16,7 @@ repositories {
         name = "sonatype"
     }
     maven ("https://jitpack.io")
+    maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
 }
 
 dependencies {
@@ -23,6 +24,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("com.github.cirosanchez:cLib:v0.2.4")
     implementation("com.github.revxrsal.lamp:brigadier:3.2.1")
+    compileOnly("me.clip:placeholderapi:2.11.6")
 }
 
 val targetJavaVersion = 21

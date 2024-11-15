@@ -105,3 +105,13 @@ goodbye-messages:
   - "<gray>[<red>-</red>]</gray> <gray><red>{player}</red> has logged off. A brave soul gone for now!</gray>"
 
 
+chat-formatting:
+  public:
+    format: "<gray>{name} » {message}</gray>"
+    permission: "survival.chat.public"
+  staff:
+    format: "<blue>(Staff Chat) {name}: </blue> {message}"
+    permission: "survival.chat.staff"
+  executive:
+    format: "<red>(Staff Chat) {name}: </red> {message}"
+    permission: "survival.chat.executive"
